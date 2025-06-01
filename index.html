@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bean There Coffee Shop - Where Every Cup Tells a Story. Freshly roasted, perfectly brewed coffee in your neighborhood.">
+  <title>Bean There Coffee Shop | Where Every Cup Tells a Story</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="site-branding">
+        <h1>Bean There Coffee Shop</h1>
+        <p class="tagline">Where Every Cup Tells a Story</p>
+      </div>
+      <nav>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content container">
+        <div class="hero-image">
+          <img src="assets/hero-coffee-shop.jpg" alt="Freshly brewed coffee" loading="lazy">
+        </div>
+        <div class="hero-text container">
+          <div class="hero-h2">
+            <h2>Freshly Roasted.</h2>
+            <h2>Perfectly Brewed.</h2>
+          </div>
+          <div class="hero-p">
+            <p>experience the finest coffee in town, </p>
+            <p>crafted with passion and served with a smile.</p>
+          </div>
+          <a href="#menu" class="btn btn-accent">View Our Menu</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container about-flex">
+        <div class="about-image">
+          <img src="assets/about-barista.jpg" alt="Bean There Coffee Shop interior" loading="lazy">
+        </div>
+        <div class="about-content">
+          <h3>Our Story</h3>
+          <p>
+            Founded in 2018, Bean There Coffee Shop began as a dream to create the perfect neighborhood gathering place. Our passionate team of baristas sources the finest beans from around the world, roasting them fresh daily to bring you exceptional coffee experiences. We believe every cup should be a moment of joy, whether you're starting your morning, meeting friends, or taking a well-deserved break.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+      <div class="container">
+        <h3>Our Menu</h3>
+        <div class="menu-grid">
+          <!-- Menu Item 1 -->
+          <div class="menu-item" data-category="Hot">
+            <div class="menu-img">
+              <img src="assets/espresso.jpg" alt="Classic Espresso" loading="lazy">
+            </div>
+            <div class="menu-info">
+              <h4>Classic Espresso</h4>
+              <span class="menu-price">$3.50</span>
+              <p class="menu-desc">Rich, bold shot of perfectly extracted espresso</p>
+              <span class="menu-cat">Hot</span>
+              <input type="checkbox" class="menu-select" data-price="3.50">
+            </div>
+          </div>
+          <!-- Menu Item 2 -->
+          <div class="menu-item" data-category="Hot">
+            <div class="menu-img">
+              <img src="assets/cappuccino.jpg" alt="Creamy Cappuccino" loading="lazy">
+            </div>
+            <div class="menu-info">
+              <h4>Creamy Cappuccino</h4>
+              <span class="menu-price">$4.25</span>
+              <p class="menu-desc">Traditional cappuccino with velvety steamed milk foam</p>
+              <span class="menu-cat">Hot</span>
+              <input type="checkbox" class="menu-select" data-price="4.25">
+            </div>
+          </div>
+          <!-- Menu Item 3 -->
+          <div class="menu-item" data-category="Hot">
+            <div class="menu-img">
+              <img src="assets/latte.jpg" alt="Vanilla Latte" loading="lazy">
+            </div>
+            <div class="menu-info">
+              <h4>Vanilla Latte</h4>
+              <span class="menu-price">$4.75</span>
+              <p class="menu-desc">Smooth espresso with steamed milk and vanilla syrup</p>
+              <span class="menu-cat">Hot</span>
+              <input type="checkbox" class="menu-select" data-price="4.75">
+            </div>
+          </div>
+          <!-- Menu Item 4 -->
+          <div class="menu-item" data-category="Hot">
+            <div class="menu-img">
+              <img src="assets/americano.jpg" alt="Americano" loading="lazy">
+            </div>
+            <div class="menu-info">
+              <h4>Americano</h4>
+              <span class="menu-price">$3.75</span>
+              <p class="menu-desc">Bold espresso with hot water for a clean, strong taste</p>
+              <span class="menu-cat">Hot</span>
+              <input type="checkbox" class="menu-select" data-price="3.75">
+            </div>
+          </div>
+          <!-- Menu Item 5 -->
+          <div class="menu-item" data-category="Specialty">
+            <div class="menu-img">
+              <img src="assets/mocha.jpg" alt="Chocolate Mocha" loading="lazy">
+            </div>
+            <div class="menu-info">
+              <h4>Chocolate Mocha</h4>
+              <span class="menu-price">$5.00</span>
+              <p class="menu-desc">Decadent blend of espresso, chocolate, and steamed milk</p>
+              <span class="menu-cat">Specialty</span>
+              <input type="checkbox" class="menu-select" data-price="5.00">
+            </div>
+          </div>
+          <!-- Menu Item 6 -->
+          <div class="menu-item" data-category="Cold">
+            <div class="menu-img">
+              <img src="assets/cold-brew.jpg" alt="Cold Brew" loading="lazy">
+            </div>
+            <div class="menu-info">
+              <h4>Cold Brew</h4>
+              <span class="menu-price">$4.00</span>
+              <p class="menu-desc">Smooth, refreshing coffee brewed cold for 12 hours</p>
+              <span class="menu-cat">Cold</span>
+              <input type="checkbox" class="menu-select" data-price="4.00">
+            </div>
+          </div>
+        </div>
+        <div class="menu-total">
+          <span>Total: $<span id="menu-total-price">0.00</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container contact-flex">
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><strong>Address:</strong> 123 Coffee Street, Downtown District, Your City 12345</li>
+            <li><strong>Phone:</strong> (555) 123-BEAN</li>
+            <li><strong>Email:</strong> <a href="mailto:hello@beanthere-coffee.com">hello@beanthere-coffee.com</a></li>
+          </ul>
+          <div class="business-hours">
+            <h4>Business Hours</h4>
+            <ul>
+              <li>Monday - Friday: 7:00 AM - 8:00 PM</li>
+              <li>Saturday - Sunday: 8:00 AM - 9:00 PM</li>
+            </ul>
+            <div id="current-hours" class="current-hours"></div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h4>Send Us a Message</h4>
+          <form id="contactForm" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <span class="form-error" id="name-error"></span>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <span class="form-error" id="email-error"></span>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="form-error" id="message-error"></span>
+            <button type="submit" class="btn btn-accent">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-flex">
+      <div class="footer-left">
+        <p>&copy; 2025 Bean There Coffee Shop. All rights reserved.</p>
+      </div>
+      <div class="footer-center">
+        <span>Follow us <a href="#" aria-label="BeanThereCoffee on social">@BeanThereCoffee</a></span>
+      </div>
+      <div class="footer-right">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+</html>
